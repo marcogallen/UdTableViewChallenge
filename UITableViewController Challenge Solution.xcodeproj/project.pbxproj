@@ -14,13 +14,13 @@
 		420CD2DF193BFF5300352117 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 420CD2DE193BFF5300352117 /* main.m */; };
 		420CD2E3193BFF5300352117 /* KDAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 420CD2E2193BFF5300352117 /* KDAppDelegate.m */; };
 		420CD2E6193BFF5300352117 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 420CD2E4193BFF5300352117 /* Main.storyboard */; };
-		420CD2E9193BFF5300352117 /* KDViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 420CD2E8193BFF5300352117 /* KDViewController.m */; };
 		420CD2EB193BFF5300352117 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 420CD2EA193BFF5300352117 /* Images.xcassets */; };
 		420CD2F2193BFF5300352117 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 420CD2F1193BFF5300352117 /* XCTest.framework */; };
 		420CD2F3193BFF5300352117 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 420CD2D2193BFF5300352117 /* Foundation.framework */; };
 		420CD2F4193BFF5300352117 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 420CD2D6193BFF5300352117 /* UIKit.framework */; };
 		420CD2FC193BFF5300352117 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 420CD2FA193BFF5300352117 /* InfoPlist.strings */; };
 		420CD2FE193BFF5300352117 /* UITableViewController_Challenge_SolutionTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 420CD2FD193BFF5300352117 /* UITableViewController_Challenge_SolutionTests.m */; };
+		420CD309193C014F00352117 /* KDTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 420CD308193C014F00352117 /* KDTableViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,14 +45,14 @@
 		420CD2E1193BFF5300352117 /* KDAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KDAppDelegate.h; sourceTree = "<group>"; };
 		420CD2E2193BFF5300352117 /* KDAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KDAppDelegate.m; sourceTree = "<group>"; };
 		420CD2E5193BFF5300352117 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		420CD2E7193BFF5300352117 /* KDViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KDViewController.h; sourceTree = "<group>"; };
-		420CD2E8193BFF5300352117 /* KDViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KDViewController.m; sourceTree = "<group>"; };
 		420CD2EA193BFF5300352117 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		420CD2F0193BFF5300352117 /* UITableViewController Challenge SolutionTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "UITableViewController Challenge SolutionTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		420CD2F1193BFF5300352117 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		420CD2F9193BFF5300352117 /* UITableViewController Challenge SolutionTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "UITableViewController Challenge SolutionTests-Info.plist"; sourceTree = "<group>"; };
 		420CD2FB193BFF5300352117 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		420CD2FD193BFF5300352117 /* UITableViewController_Challenge_SolutionTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UITableViewController_Challenge_SolutionTests.m; sourceTree = "<group>"; };
+		420CD307193C014F00352117 /* KDTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KDTableViewController.h; path = ../KDTableViewController.h; sourceTree = "<group>"; };
+		420CD308193C014F00352117 /* KDTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KDTableViewController.m; path = ../KDTableViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,11 +112,11 @@
 		420CD2D8193BFF5300352117 /* UITableViewController Challenge Solution */ = {
 			isa = PBXGroup;
 			children = (
+				420CD307193C014F00352117 /* KDTableViewController.h */,
+				420CD308193C014F00352117 /* KDTableViewController.m */,
 				420CD2E1193BFF5300352117 /* KDAppDelegate.h */,
 				420CD2E2193BFF5300352117 /* KDAppDelegate.m */,
 				420CD2E4193BFF5300352117 /* Main.storyboard */,
-				420CD2E7193BFF5300352117 /* KDViewController.h */,
-				420CD2E8193BFF5300352117 /* KDViewController.m */,
 				420CD2EA193BFF5300352117 /* Images.xcassets */,
 				420CD2D9193BFF5300352117 /* Supporting Files */,
 			);
@@ -250,9 +250,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				420CD2E9193BFF5300352117 /* KDViewController.m in Sources */,
 				420CD2DF193BFF5300352117 /* main.m in Sources */,
 				420CD2E3193BFF5300352117 /* KDAppDelegate.m in Sources */,
+				420CD309193C014F00352117 /* KDTableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

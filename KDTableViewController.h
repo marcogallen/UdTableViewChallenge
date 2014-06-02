@@ -1,5 +1,5 @@
 //
-//  KDViewController.h
+//  KDTableViewController.h
 //  UITableViewController Challenge Solution
 //
 //  Created by Marco Antonio Gallen vargas on 01/06/14.
@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface KDViewController : UIViewController
+@interface KDTableViewController : UITableViewController
 
 @end
